@@ -2,4 +2,4 @@
 
 Flarum Beta 5 Türkçe Dil Eklentisi
 
-Kurmak için : `composer require bek/flarum-ext-turkish`
+Kurmak için : `composer require yu2un/flarum-ext-turkish`
