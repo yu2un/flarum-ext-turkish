@@ -1,8 +1,8 @@
 {
-    "name": "bek/flarum-ext-turkish",
+    "name": "yu2un/flarum-ext-turkish",
     "type": "flarum-extension",
     "description": "Turkish language pack for Flarum.",
-    "homepage": "https://github.com/bekirkarul/flarum-ext-turkish",
+    "homepage": "https://github.com/yu2un/flarum-ext-turkish",
     "keywords": ["flarum", "locale"],
     "license": "MIT",
     "authors": [
@@ -12,7 +12,7 @@
         }
     ],
     "support": {
-        "source": "https://github.com/bekirkarul/flarum-ext-turkish"
+        "source": "https://github.com/yu2un/flarum-ext-turkish"
     },
     "require": {
         "flarum/core": "^0.1.0-beta.5"
