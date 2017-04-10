@@ -1,0 +1,101 @@
+flarum-tags:
+
+  ##
+  # UNIQUE KEYS - The following keys are used in only one location each.
+  ##
+
+  # Translations in this namespace are used by the admin interface.
+  admin:
+
+    # These translations are used in the Basics page.
+    basics:
+      tags_label: => flarum-tags.ref.tags
+
+    # These translations are used in the Edit Tag modal dialog.
+    edit_tag:
+      color_label: Renk
+      delete_tag_button: Etiketi Sil
+      delete_tag_confirmation: "Bu etiketi silmek istediğinize emin misiniz? Bu etikete sahip tartışmalar SİLİNMEYECEK."
+      description_label: Açıklama
+      hide_label: Tüm Tartışmalar'dan Gizle
+      name_label: => flarum-tags.ref.name
+      name_placeholder: => flarum-tags.ref.name
+      slug_label: Kısaltma
+      submit_button: => core.ref.save_changes
+      title: => flarum-tags.ref.create_tag
+
+    # These translations are used in the navigation bar.
+    nav:
+      tags_button: => flarum-tags.ref.tags
+      tags_text: Tartışmaları yönetmek için kullanılan etiketleri düzenleyin.
+
+    # These translations are used in the Permissions page of the admin interface.
+    permissions:
+      allow_edit_tags_label: Etiketleri düzenlemeye izin ver
+      restrict_by_tag_heading: Etikete göre kısıtla
+      tag_discussions_label: Tartışmaları etiketleme
+
+    # These translations are used in the Tag Settings modal dialog.
+    tag_settings:
+      range_separator_text: " - "
+      required_primary_heading: Gerekli Birincil Etiket Sayısı
+      required_primary_text: Tartışmaya uygulanabilecek en çok ve en az birincil etiket sayısını girin.
+      required_secondary_heading: Gerekli İkincil Etiket Sayısı
+      required_secondary_text: Tartışmaya uygulanabilecek en çok ve en az ikincil etiket sayısını girin.
+      title: Etiket Ayarları
+
+    # These translations are used in the Tags page.
+    tags:
+      about_tags_text: "Etiketler tartışmaları kategorize etmek için kullanılır. Birincil etiketler alışageldiğiniz forum kategorileri gibidir: iki seviyeli hiyerarşiye uygundurlar. İkincil etiketler ise bir hiyerarşiye sahip değillerdir, daha çok küçük bir kategorileme için kullanışlıdırlar."
+      create_tag_button: => flarum-tags.ref.create_tag
+      primary_heading: Birincil Etiketler
+      secondary_heading: İkincil Etiketler
+      settings_button: Ayarlar
+
+  # Translations in this namespace are used by the forum user interface.
+  forum:
+
+    # These translations are used by the Choose Tags modal dialog.
+    choose_tags:
+      choose_primary_placeholder: "Ana etiketi seçin|{count} ana etiketi seçin"
+      choose_secondary_placeholder: "Bir tane daha etiket seçin|{count} tane daha etiket seçin"
+      edit_title: "{title} için seçilmiş etiketleri düzenle"
+      submit_button: => core.ref.okay
+      title: Tartışmanız İçin Etiket Seçin
+
+    # These translations are used by the composer when starting a discussion.
+    composer_discussion:
+      choose_tags_link: Etiketleri Seç
+
+    # These translations are used by the discussion control buttons.
+    discussion_controls:
+      edit_tags_button: Etiketleri Düzenle
+
+    # These translations are used on the index page, peripheral to the discussion list.
+    index:
+      more_link: Daha fazla...
+      tags_link: => flarum-tags.ref.tags
+      untagged_link: Etiketsiz
+
+    # These translations are displayed between posts in the post stream.
+    post_stream:
+      added_tags_text: "{username} {tagsAdded} ekledi."
+      added_and_removed_tags_text: "{username} {tagsAdded} ekledi ve {tagsRemoved} sildi."
+      removed_tags_text: "{username} {tagsRemoved} sildi."
+      tags_text: "{tags} etiketini|{tags} etiketlerini"
+  
+  # Translations in this namespace are used by the forum and admin interfaces.
+  lib:
+
+    # This translation is displayed in place of the name of a tag that's been deleted.
+    deleted_tag_text: Silindi
+
+  ##
+  # REUSED TRANSLATIONS - These keys should not be used directly in code!
+  ##
+
+  # Translations in this namespace are referenced by two or more unique keys.
+  ref:
+    create_tag: Etiket Oluştur
+    name: İsim
+    tags: Etiketler

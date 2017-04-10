@@ -1,0 +1,38 @@
+{
+    "name": "bek/flarum-ext-turkish",
+    "type": "flarum-extension",
+    "description": "Turkish language pack for Flarum.",
+    "homepage": "https://github.com/bekirkarul/flarum-ext-turkish",
+    "keywords": ["flarum", "locale"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bekir Karul",
+            "email": "ebekirkarul@gmail.com"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/bekirkarul/flarum-ext-turkish"
+    },
+    "require": {
+        "flarum/core": "^0.1.0-beta.5"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.3.x-dev"
+         },
+        "flarum-extension": {
+            "title": "Türkçe",
+            "icon": {
+                "image": "icon.svg",
+                "backgroundColor": "#00247d",
+                "backgroundSize": "cover",
+                "backgroundPosition": "center"
+            }
+        },
+        "flarum-locale": {
+            "code": "tr",
+            "title": "Türkçe"
+        }
+    }
+}

@@ -1,0 +1,61 @@
+flarum-flags:
+
+  ##
+  # UNIQUE KEYS - The following keys are used in only one location each.
+  ##
+
+  # Translations in this namespace are used by the admin interface.
+  admin:
+
+    # These translations are used in the Permissions page of the admin interface.
+    permissions:
+      flag_posts_label: İletileri bildirme
+      view_flags_label: Bildirilen iletileri görme
+
+    # These translations are used in the Flags Settings modal dialog.
+    settings:
+      guidelines_url_label: Forum kuralları bağlantısı
+      title: Bildirme Ayarları
+
+  # Translations in this namespace are used by the forum user interface.
+  forum:
+
+    # These translations are used by the Flag Post modal dialog.
+    flag_post:
+      confirmation_message: İletiyi bildirdiğiniz için teşekkürler. Moderatörlerimiz iletiyi kontrol edecek.
+      dismiss_button: => core.ref.okay
+      reason_inappropriate_label: Uygun değil
+      reason_inappropriate_text: "Bu ileti saldırgan, küfür içerikli, veya <a>forum kurallarını</a> ihlal ediyor."
+      reason_off_topic_label: "Konu dışı"
+      reason_off_topic_text: Bu ileti konu ile alâkalı değil bu nedenle başka bir yere taşınması gerekiyor.
+      reason_other_label: Diğer
+      reason_spam_label: İstenmeyen
+      reason_spam_text: Bu ileti reklam içeriyor.
+      submit_button: => flarum-flags.ref.flag_post
+      title: => flarum-flags.ref.flag_post
+
+    # These translations are used by the Flagged Posts dropdown, a.k.a. "the flag".
+    flagged_posts:
+      empty_text: Bildirilmiş İleti Yok
+      item_text: "{username} <em>{discussion}</em> içinde"
+      title: => flarum-flags.ref.flagged_posts
+      tooltip: => flarum-flags.ref.flagged_posts
+
+    # These translations are used by the frame displayed around flagged posts.
+    post:
+      dismiss_flag_button: Bildirimi Yok Say
+      flagged_by_text: "{username} şöyle bildirdi :"
+      flagged_by_with_reason_text: "{username} {reason} olarak bildirdi."
+
+    # These translations are used by the post control buttons.
+    post_controls:
+      flag_button: Bildir
+
+  ##
+  # REUSED TRANSLATIONS - These keys should not be used directly in code!
+  ##
+
+  # Translations in this namespace are referenced by two or more unique keys.
+  ref:
+    flag_post: İletiyi Bildir
+    flagged_posts: Bildirilmiş İletiler

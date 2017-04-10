@@ -1,0 +1,533 @@
+core:
+
+  ##
+  # UNIQUE KEYS - The following keys are used in only one location each.
+  ##
+
+  # Translations in this namespace are used by the admin interface.
+  admin:
+
+    # These translations are used in the placeholder Add Extension modal dialog.
+    add_extension:
+      developer_text: "Eğer geliştirici iseniz, <a>dökümanları</a> okuyabilir ve kendi eklentilerinizi yazabilirsiniz."
+      install_text: "Bu arada, eklentiler için <a>Flarum Topluluğu sitesine</a> bakabilir ve eklentileri Composer yardımıyla yükleyebilirsiniz."
+      temporary_text: "Pek de uzak olmayan bir gün gelecek, bu diyalog forumunuza kolaylıkla eklenti kurmanıza olanak sağlayacak. Söylediğimiz gibi, biz bir ekosistem inşa ediyoruz!"
+
+    # These translations are used in the Appearance page.
+    appearance:
+      colored_header_label: Renkli Başlık
+      colors_heading: Renkler
+      colors_text: "Forumunuza uygulanacak iki rengi seçin. Birinci renk öğelerin vurgusu, ikinci renk ise arkaplan öğeleri için kullanılacak."
+      custom_header_heading: Özel Başlık
+      custom_header_text: Sayfaların en başına eklenecek HTML kodunu girin. Bu kod Flarum'un başlığından yukarda olacak.
+      custom_styles_heading: Özel Stiller
+      custom_styles_text: Kendinize ait LESS/CSS kodunu Flarum'un öntanımlı stilleri üzerine ekleyerek forumunuzun görünümünü özelleştirin.
+      dark_mode_label: Karanlık Kip
+      edit_css_button: Özel Stili Düzenle
+      edit_header_button: Özel Başlığı Düzenle
+      enter_hex_message: Lütfen onaltılık bir renk kodu girin.
+      favicon_heading: Simgecik
+      favicon_text: Forumunuz için adres çubuğunda gözükecek minik simgeyi yükleyin.
+      logo_heading: Logo
+      logo_text: Forum başlığı yerinde gösterilecek resmi yükleyin.
+      submit_button: => core.ref.save_changes
+
+    # These translations are used in the Basics page.
+    basics:
+      all_discussions_label: => core.ref.all_discussions
+      default_language_heading: Öntanımlı Dil
+      forum_description_heading: Forum Açıklaması
+      forum_description_text: Forumunuz için bir veya iki kısa cümle yazın. Bu arama motorlarında ve meta etiketleri arasında gözükür.
+      forum_title_heading: Forum Başlığı
+      home_page_heading: Anasayfa
+      home_page_text: "Kullanıcıların forumunuzu ilk ziyaret ettiğinde göreceği sayfayı seçin."
+      saved_message: Değişiklikleriniz kaydedildi.
+      submit_button: => core.ref.save_changes
+      welcome_banner_heading: Karşılama İletisi
+      welcome_banner_text: Tüm Tartışmalar sayfasında gözükecek olan iletiyi girin. Ziyaretçileri karşılamak için bu iletiyi kullanabilirsiniz.
+
+    # These translations are used in the Dashboard page.
+    dashboard:
+      beta_warning_text: "Bu <strong>deneme sürümü</strong> yazılımı test etmeniz ve böylece yardımınızla bizim de yazılımı daha da iyi hale getirebilmemiz için sunuldu; sitenizde kullanırken dikkatli olun."
+      contributing_text: "Hata bulmak ve katkı sağlamak mı istiyorsunuz? <a>Katkı sağlama belgeleri</a>ni okuyun."
+      extension_text: "Eklenti geliştirmek ile mi ilgileniyorsunuz? <a>Eklenti geliştirme belgeleri</a>ni okuyun."
+      features_text: "Geliştirme için fikriniz mi var? <a>Özellikler etiketi</a>nin altında bize anlatın."
+      support_text: "Hata mı buldunuz? <a>Destek etiketi</a>nin altında bize bildirin."
+      troubleshooting_text: "Sorununuz mu var? <a>Sorun çözme belgeleri</a>ne göz atın."
+      version_text: "Flarum'u denediğiniz için teşekkürler! {version} versiyonunu kullanıyorsunuz."
+      welcome_text: "Flarum Deneme Sürümü'ne hoşgeldiniz!"
+
+    # These translations are used in the Edit Custom CSS modal dialog.
+    edit_css:
+      customize_text: "Kendinize ait LESS/CSS kodunu Flarum'un <a>öntanımlı stilleri</a> üzerine ekleyerek forumunuzun görünümünü özelleştirin."
+      submit_button: => core.ref.save_changes
+      title: Özel Stili Düzenle
+
+    # These translations are used in the Edit Group modal dialog.
+    edit_group:
+      color_label: Renk
+      delete_button: Grubu Sil
+      delete_confirmation: "Bu grubu silmek istediğinize emin misiniz? Grup üyeleri SİLİNMEYECEK."
+      icon_label: Simge
+      icon_text: "<code>fa-</code> ön eki olmadan istediğiniz bir <a>FontAwesome</a> simge ismini girin."
+      name_label: İsim
+      plural_placeholder: Çoğul (örn: Yönlendiriciler)
+      singular_placeholder: Tekil (örn: Yönlendirici)
+      submit_button: => core.ref.save_changes
+      title: Grup Oluştur
+    
+    # These translations are used in the Edit Custom Header modal dialog.
+    edit_header:
+      customize_text: Sayfaların en başına eklenecek HTML kodunu girin. Bu kod Flarum'un başlığından yukarda olacak.
+      submit_button: => core.ref.save_changes
+      title: Özel Başlığı Düzenle
+    
+    # These translations are used in the email page of the admin interface.
+    email:
+      account_heading: SMTP Hesabı
+      addresses_heading: Adresler
+      driver_label: Driver
+      encryption_label: Şifreleme
+      from_label: Gönderen
+      heading: => core.ref.email
+      host_label: Sunucu
+      password_label: => core.ref.password
+      port_label: Port
+      server_heading: SMTP Sunucusu
+      submit_button: => core.ref.save_changes
+      text: Forumunuzun e-posta gönderirken kullanacağı SMTP ayar ve adreslerini yapılandırın.
+      username_label: => core.ref.username
+
+    # These translations are used in the Extensions page.
+    extensions:
+      add_button: Eklenti Ekle
+      settings_button: => core.ref.settings
+      uninstall_button: Kaldır
+
+    # These translations are used in the session dropdown menu.
+    header:
+      log_out_button: => core.ref.log_out
+
+    # These translations are used in the modal dialog displayed when loading extensions.
+    loading:
+      title: Lütfen bekleyin...
+
+    # These translations are used in the navigation bar.
+    nav:
+      appearance_button: Görünüm
+      appearance_text: "Forumunuzun renklerini, logosunu ve diğer özelliklerini özelleştirin."
+      basics_button: Temel Ayarlar
+      basics_text: "Forumunuzun başlığını, dilini ve diğer basit ayarlarını belirleyin."
+      dashboard_button: Genel Bakış
+      dashboard_text: İlk bakışta forumunuz.
+      email_button: => core.ref.email
+      email_text: "Forumunuzun e-posta ayarlarını yapın."
+      extensions_button: Eklentiler
+      extensions_text: Forumunuza ihtiyacınıza uygun başka özellikler ekleyin.
+      permissions_button: İzinler
+      permissions_text: Kimin ne görüp ne yapabileceğini seçin.
+
+    # These translations are used in the Permissions page of the admin interface.
+    permissions:
+      allow_renaming_label: Yeniden isimlendirmeye izin ver
+      allow_post_editing_label: İleti düzenlemeye izin ver
+      create_heading: Oluşturma
+      delete_discussions_forever_label: Tartışmaları tamamen silme
+      delete_discussions_label: Tartışmaları gizleme
+      delete_posts_forever_label: İletileri tamamen silme
+      edit_and_delete_posts_label: İletileri düzenleme ve silme
+      global_heading: Genel
+      moderate_heading: Yönetim
+      new_group_button: Yeni Grup
+      participate_heading: Katılım
+      read_heading: Okuma
+      rename_discussions_label: Tartışmaları yeniden isimlendirme
+      reply_to_discussions_label: Tartışmaları cevaplama
+      sign_up_label: Kayıt Ol
+      start_discussions_label: Tartışma başlatma
+      view_discussions_label: Tartışmaları görme
+      view_post_ips_label: İletilerin IP adreslerini görme
+
+    # These translations are used in the dropdown menus on the Permissions page.
+    permissions_controls:
+      allow_indefinitely_button: Süresiz olarak
+      allow_some_minutes_button: "{count} dakika için" # TESTIT |{count} dakika için
+      allow_ten_minutes_button: 10 dakika boyunca
+      allow_until_reply_button: Sonraki cevaba kadar
+      everyone_button: Herkes
+      members_button: => core.group.members
+      signup_closed_button: Kapalı
+      signup_open_button: Açık
+
+    # These translations are used in image upload buttons.
+    upload_image:
+      remove_button: Sil
+      upload_button: Resim Seçin...
+    
+    # These translations are used in the Settings modal dialog.
+    settings:
+      submit_button: => core.ref.save_changes
+
+  # Translations in this namespace are used by the forum user interface.
+  forum:
+
+    # These translations are used in the Change Email modal dialog.
+    change_email:
+      confirmation_message: => core.ref.confirmation_email_sent
+      confirm_password_placeholder: => core.ref.confirm_password
+      dismiss_button: => core.ref.okay
+      incorrect_password_message: Girdiğiniz şifre doğru değil.
+      submit_button: => core.ref.save_changes
+      title: => core.ref.change_email
+
+    # These translations are used in the Change Password modal dialog.
+    change_password:
+      send_button: Şifre Sıfırlama E-postası Gönder
+      text: Aşağıdaki butona basın ve şifrenizi değiştirmek için gelecek olan e-postayı kontrol edin.
+      title: => core.ref.change_password
+
+    # These translations are used by the composer controls.
+    composer:
+      close_tooltip: Kapat
+      exit_full_screen_tooltip: Tam Ekrandan Çık
+      full_screen_tooltip: Tam Ekran
+      minimize_tooltip: Küçült
+
+    # These translations are used by the composer when starting a discussion.
+    composer_discussion:
+      body_placeholder: Bir ileti yazın...
+      discard_confirmation: "Henüz tartışmanızı göndermediniz. Yok saymak ister misiniz?"
+      submit_button: Tartışmayı Gönder
+      title: => core.ref.start_a_discussion
+      title_placeholder: Tartışma Başlığı
+
+    # These translations are used by the composer when editing a post.
+    composer_edit:
+      discard_confirmation: "Değişiklikleri kaydetmediniz. Yok saymak ister misiniz?"
+      post_link: "{discussion} içindeki #{number} ileti"
+      submit_button: => core.ref.save_changes
+
+    # These translations are used by the composer when replying to a discussion.
+    composer_reply:
+      body_placeholder: => core.ref.write_a_reply
+      discard_confirmation: "Cevabınızı göndermediniz. Yok saymak ister misiniz?"
+      posted_message: Cevabınız gönderildi.
+      submit_button: Cevabı Gönder
+      view_button: Görüntüle
+
+    # These translations are used by the discussion control buttons.
+    discussion_controls:
+      cannot_reply_button: Cevaplanamaz
+      cannot_reply_text: Bu tartışmaya cevap verme yetkiniz yok.
+      delete_button: => core.ref.delete
+      delete_confirmation: "Bu tartışmayı silmek istediğinize emin misiniz?"
+      delete_forever_button: => core.ref.delete_forever
+      log_in_to_reply_button: Giriş yapın
+      rename_button: Başlığı Düzenle
+      rename_text: "Bu tartışma için yeni bir başlık girin:"
+      reply_button: => core.ref.reply
+      restore_button: => core.ref.restore
+
+    # These translations are used in the discussion list.
+    discussion_list:
+      empty_text: Görünüşe göre burada bir tartışma yok.
+      load_more_button: => core.ref.load_more
+      mark_as_read_tooltip: Okundu olarak işaretle
+      replied_text: "{username} {ago} cevap verdi"
+      started_text: "{username} {ago} başlattı"
+
+    # These translations are used in the Edit User modal dialog (admin function).
+    edit_user:
+      email_label: => core.ref.email
+      password_label: => core.ref.password
+      submit_button: => core.ref.save_changes
+      title: Kullanıcıyı Düzenle
+      username_label: => core.ref.username
+
+    # These translations are used in the Forgot Password modal dialog.
+    forgot_password:
+      dismiss_button: => core.ref.okay
+      email_placeholder: => core.ref.email
+      email_sent_message: Şifrenizi sıfırlamanız için size bir e-posta gönderdik. Bir veya iki dakika içinde size ulaşmazsa istenmeyen posta kutunuzu kontrol edin.
+      not_found_message: Bu e-posta ile kayıt olmuş bir kullanıcı bulunamadı.
+      submit_button: Şifreyi Sıfırla
+      text: E-posta adresinizi girin, size şifrenizi sıfırlamanız için bir bağlantı göndereceğiz.
+      title: Şifremi Unuttum
+
+    # These translations are used in the header and session dropdown menu.
+    header:
+      admin_button: Yönetim Paneli
+      log_in_link: => core.ref.log_in
+      log_out_button: => core.ref.log_out
+      profile_button: Profil
+      search_placeholder: Forumda Ara
+      settings_button: => core.ref.settings
+      sign_up_link: => core.ref.sign_up
+
+    # These translations are used on the index page, peripheral to the discussion list.
+    index:
+      all_discussions_link: => core.ref.all_discussions
+      cannot_start_discussion_button: Tartışma Başlatamazsınız
+      mark_all_as_read_confirmation: "Tüm tartışmaları okundu saymak istiyor musunuz?"
+      mark_all_as_read_tooltip: => core.ref.mark_all_as_read
+      refresh_tooltip: Yenile
+      start_discussion_button: => core.ref.start_a_discussion
+
+    # These translations are used by the sorting control above the discussion list.
+    index_sort:
+      latest_button: En Son
+      newest_button: En Yeni
+      oldest_button: En Eski
+      relevance_button: Alâka
+      top_button: En Gözde
+
+    # These translations are used in the Log In modal dialog.
+    log_in:
+      forgot_password_link: "Şifrenizi mi unuttunuz?"
+      invalid_login_message: Giriş bilgileriniz geçersiz.
+      password_placeholder: => core.ref.password
+      sign_up_text: "Hesabınız yok mu? <a>Kayıt Olun</a>"
+      submit_button: => core.ref.log_in
+      title: => core.ref.log_in
+      username_or_email_placeholder: Kullanıcı Adı veya E-posta
+
+    # These translations are used by the Notifications dropdown, a.k.a. "the bell".
+    notifications:
+      discussion_renamed_text: "{username} başlığı değiştirdi"
+      empty_text: Bildirim Yok
+      mark_all_as_read_tooltip: => core.ref.mark_all_as_read
+      title: => core.ref.notifications
+      tooltip: => core.ref.notifications
+
+    # These translations are used by tooltips displayed for individual posts.
+    post:
+      edited_text: Düzenlendi
+      edited_tooltip: "{username} {ago} düzenledi."
+      number_tooltip: "İleti #{number}"
+
+    # These translations are used by the post control buttons.
+    post_controls:
+      delete_button: => core.ref.delete
+      delete_forever_button: => core.ref.delete_forever
+      edit_button: => core.ref.edit
+      restore_button: => core.ref.restore
+
+    # These translations are used in the scrubber to the right of the post stream.
+    post_scrubber:
+      now_link: Son İleti
+      original_post_link: İlk İleti
+      unread_text: "{count} okunmamış"
+      viewing_text: "{count} iletiden {index}." # | {count} mesajdan {index}. TESTIT
+
+    # These translations are displayed between posts in the post stream.
+    post_stream:
+      discussion_renamed_old_tooltip: 'Eski başlık: "{old}"'
+      discussion_renamed_text: "{username} başlığı {new} olarak değiştirdi."
+      load_more_button: => core.ref.load_more
+      reply_placeholder: => core.ref.write_a_reply
+      time_lapsed_text: "{period} sonra"
+
+    # These translations are used by the search results dropdown list.
+    search:
+      all_discussions_button: 'Tüm tartışmalarda "{query}" ara'
+      discussions_heading: => core.ref.discussions
+      users_heading: Kullanıcılar
+
+    # These translations are used in the Settings page.
+    settings:
+      account_heading: Hesap
+      change_email_button: => core.ref.change_email
+      change_password_button: => core.ref.change_password
+      notifications_heading: => core.ref.notifications
+      notify_by_email_heading: => core.ref.email
+      notify_by_web_heading: Web
+      notify_discussion_renamed_label: Başlattığım tartışmanın başlığı değiştirildiğinde
+      privacy_disclose_online_label: Çevrimiçi olduğumu başkalarına göster
+      privacy_heading: Gizlilik
+      title: => core.ref.settings
+
+    # These translations are used in the Sign Up modal dialog.
+    sign_up:
+      email_placeholder: => core.ref.email
+      dismiss_button: => core.ref.okay
+      log_in_text: "Zaten bir hesabınız var mı? <a>Giriş yapın</a>"
+      password_placeholder: => core.ref.password
+      submit_button: => core.ref.sign_up
+      title: => core.ref.sign_up
+      username_placeholder: => core.ref.username
+      welcome_text: "Hoşgeldin, {username}!"
+
+    # These translations are used in the user profile page and profile popup.
+    user:
+      avatar_remove_button: Sil
+      avatar_upload_button: Yükle
+      avatar_upload_tooltip: Yeni bir avatar yükle
+      bio_placeholder: Kendiniz hakkında bir şeyler yazın
+      discussions_link: => core.ref.discussions
+      in_discussion_text: "{discussion} içinde"
+      joined_date_text: "{ago} katıldı"
+      online_text: Çevrimiçi
+      posts_load_more_button: => core.ref.load_more
+      posts_link: İletiler
+      settings_link: => core.ref.settings
+
+    # These translations are found on the user profile page (admin function).
+    user_controls:
+      button: Denetimler
+      delete_button: => core.ref.delete
+      delete_confirmation: "Bu kullanıcıyı silmek istediğinize emin misiniz? Kullanıcının tüm iletileri de silinecek."
+      edit_button: => core.ref.edit
+
+    # These translations are used in the alert that is shown when a new user has not confirmed their email address.
+    user_email_confirmation:
+      alert_message: => core.ref.confirmation_email_sent
+      resend_button: Tekrar Gönder
+      sent_message: Gönderildi
+
+  # Translations in this namespace are used by the forum and admin interfaces.
+  lib:
+
+    # These translations are displayed as tooltips for discussion badges.
+    badge:
+      hidden_tooltip: Gizli
+
+    # These translations are used to modify usernames.
+    username:
+      deleted_text: "[silinmiş]"
+
+    # These translations are displayed as error messages.
+    error:
+      generic_message: "Hay aksi! Bir şeyler ters gitti. Lütfen sayfayı yenileyip tekrar deneyin."
+      not_found_message: İstenilen kaynak bulunamadı.
+      permission_denied_message: Bunu yapmaya yetkiniz yok.
+      rate_limit_exceeded_message: Çok hızlısınız. Birkaç saniye içinde tekrar deneyin.
+
+    # These translations are used as suffixes when abbreviating numbers.
+    number_suffix:
+      kilo_text: K
+      mega_text: M
+
+    # These translations are used to punctuate a series of items.
+    series:
+      glue_text: ", "
+      three_text: "{first}, {second}, ve {third}"
+      two_text: "{first} ve {second}"
+
+  # Translations in this namespace are used in views other than Flarum's normal JS client.
+  views:
+
+    # Translations in this namespace are displayed by the basic HTML content loader.
+    content:
+      javascript_disabled_message: Bu site en iyi modern bir internet tarayıcısında JavaScript etkin iken gözükür.
+      load_error_message: Sitenin tam sürümünü yüklemeye çalışırken bir şeyler ters gitti.
+      loading_text: Yükleniyor...
+
+    # Translations in this namespace are displayed in the basic HTML discussion view.
+    discussion:
+      next_page_button: => core.ref.next_page
+      previous_page_button: Önceki Sayfa
+
+    # Translations in this namespace are displayed by the basic HTML discussion index.
+    index:
+      all_discussions_heading: => core.ref.all_discussions
+      next_page_button: => core.ref.next_page
+
+    # Translations in this namespace are displayed by the Reset Password interface.
+    reset:
+      confirm_password_label: => core.ref.confirm_password
+      password_label: => core.ref.password
+      submit_button: Şifreyi Sıfırla
+      title: => core.ref.reset_your_password
+
+  # Translations in this namespace are used in emails sent by the forum.
+  email:
+
+    # These translations are used in emails sent when users register new accounts.
+    activate_account:
+      subject: Hesabınızı Etkinleştirin
+      body: |
+        Selam {username}!
+
+        Birisi (umarız ki sen!) bu e-posta adresini kullanarak {forum} forumuna kayıt oldu.
+
+        Eğer bu sen isen, basitçe aşağıdaki bağlantıya tıkla böylece hesabın etkinleşmiş olacak:
+        {url}
+
+        Eğer kayıt olmadıysan, bu iletiyi görmezden gel.
+
+    # These translations are used in emails sent when users change their email address.
+    confirm_email:
+      subject: Yeni E-posta Adresinizi Onaylayın
+      body: |
+        Selam {username}!
+
+        Birisi (umarız ki sen!) {forum} forumunda kayıtlı e-posta adresini bu adres olarak güncelledi.
+
+        Eğer bu sen isen, sadece aşağıdaki bağlantıya tıkla böylece e-posta adresin doğrulanmış olacak:
+        {url}
+
+        Eğer bu değişikliği yapmadıysan, bu iletiyi görmezden gel.
+
+    # These translations are used in emails sent when users ask to reset their passwords.
+    reset_password:
+      subject: => core.ref.reset_your_password
+      body: |
+        Selam {username}!
+
+        Birisi (umarız ki sen!) {forum} forumunda bu e-posta ile bağlantılı hesap için şifre sıfırlama isteği gönderdi.
+
+        Eğer bu sen isen, şifreni sıfırlamak için aşağıdaki bağlantıya tıkla:
+        {url}
+
+        Eğer şifreni değiştirmek istememişsen, sadece bu iletiyi görmezden gel. Bir şey olmayacak.
+
+  ##
+  # REUSED TRANSLATIONS - These keys should not be used directly in code!
+  ##
+
+  # Translations in this namespace are referenced by two or more unique keys.
+  ref:
+    all_discussions: Tüm Tartışmalar
+    change_email: E-postayı Değiştir
+    change_password: Şifreyi Değiştir
+    confirm_password: Şifreyi Doğrula
+    confirmation_email_sent: "{email} adresine bir doğrulama e-postası gönderdik. Eğer henüz gelmediyse, istenmeyen e-postalar klasörünü kontrol edin."
+    delete: Sil
+    delete_forever: Tamamen Sil
+    discussions: Tartışmalar
+    edit: Düzenle
+    email: E-posta
+    load_more: Daha fazla göster
+    log_in: Giriş Yap
+    log_out: Çıkış Yap
+    mark_all_as_read: Tümünü Okundu Olarak İşaretle
+    next_page: Sonraki Sayfa
+    notifications: Bildirimler
+    okay: TAMAM                                     # Referenced by flarum-tags.yml
+    password: Şifre
+    reply: Cevapla                                 # Referenced by flarum-mentions.yml
+    reset_your_password: Şifreyi Sıfırla
+    restore: Geri Getir
+    save_changes: Kaydet                   # Referenced by flarum-suspend.yml, flarum-tags.yml
+    settings: Ayarlar
+    sign_up: Kayıt Ol
+    some_others: "{count} diğer kişi"  # ({count} diğer| )Referenced by flarum-likes.yml, flarum-mentions.yml (TESTIT)
+    start_a_discussion: Tartışma Başlat
+    username: Kullanıcı Adı
+    write_a_reply: Cevap yaz...
+    you: Sen                                     # Referenced by flarum-likes.yml, flarum-mentions.yml
+
+  ##
+  # GROUP NAMES - These keys are translated at the back end.
+  ##
+
+  # Translations in this namespace are used to translate default group names.
+  group:
+    admin: Yönetici
+    admins: Yöneticiler
+    guest: Ziyaretçi
+    guests: Ziyaretçiler
+    member: Üye
+    members: Üyeler
+    mod: Yönlendirici
+    mods: Yönlendiriciler
